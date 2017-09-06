@@ -1,0 +1,559 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Item_Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b4ec48182f849c5b048a54a71b9418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_equipment_set:
+  - item_Name: Wood Sword
+    item_Type: Weapon
+    description: '+Atk 5
+
+
+      Require : Swordsman'
+    item_ID: 2001
+    item_Img: {fileID: 2800000, guid: 8fcf8e7e765615844a27e47ea9708eb8, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 6
+    require_Class: 1
+    potion: 0
+    price: 300
+    hp: 0
+    mp: 0
+    atk: 5
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Iron Sword
+    item_Type: Weapon
+    description: '+Atk 12
+
+
+      Require : Swordsman'
+    item_ID: 2002
+    item_Img: {fileID: 2800000, guid: e04755f3b3abbdb4c8a9ffb9f666c890, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 6
+    require_Class: 1
+    potion: 0
+    price: 900
+    hp: 0
+    mp: 0
+    atk: 12
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: <color=yellow>Broad Sword</color>
+    item_Type: Weapon
+    description: '+Atk 20
+
+      +Critical Rate 5
+
+      +Attack Speed 5
+
+
+      Require : Swordsman'
+    item_ID: 2003
+    item_Img: {fileID: 2800000, guid: ef0ec1750e84de449ba4e82f2a32590c, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 6
+    require_Class: 1
+    potion: 0
+    price: 3000
+    hp: 0
+    mp: 0
+    atk: 20
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 5
+    atkSpd: 5
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: <color=red>Crimson Sword</color>
+    item_Type: Weapon
+    description: '+Atk 45
+
+      +Critical Rate 25
+
+      +Attack Speed 25
+
+
+      Require : Swordsman'
+    item_ID: 2004
+    item_Img: {fileID: 2800000, guid: da1b6c9cee9b1ee43b04bd55d8064ff7, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 6
+    require_Class: 1
+    potion: 0
+    price: 0
+    hp: 0
+    mp: 0
+    atk: 45
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 25
+    atkSpd: 25
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Broze Armor
+    item_Type: Armor
+    description: +Def 8
+    item_ID: 2005
+    item_Img: {fileID: 2800000, guid: eb3d39de80fd9e34b9d5798fe180db0b, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 2
+    require_Class: 1
+    potion: 0
+    price: 800
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 8
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Silver Armor
+    item_Type: Armor
+    description: +Def 15
+    item_ID: 2006
+    item_Img: {fileID: 2800000, guid: 7116bc8a1f2e34846b495cfc186287f3, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 2
+    require_Class: 1
+    potion: 0
+    price: 1500
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 15
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Helm
+    item_Type: Head Gear
+    description: +Def 4
+    item_ID: 2007
+    item_Img: {fileID: 2800000, guid: abaf4699c6aab1247b06445e3cde1475, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 1
+    require_Class: 1
+    potion: 0
+    price: 500
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 4
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: <color=red>Dark Helm</color>
+    item_Type: Item Type
+    description: '+HP 200
+
+      +Defend 20'
+    item_ID: 2008
+    item_Img: {fileID: 2800000, guid: 6a115b5af41910e49887a66257370d6b, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 0
+    require_Class: 1
+    potion: 0
+    price: 0
+    hp: 200
+    mp: 0
+    atk: 0
+    def: 20
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Shield
+    item_Type: Shield
+    description: +Def 5
+    item_ID: 2009
+    item_Img: {fileID: 2800000, guid: ef14fef5ec39d7c42bc084304fe61f0c, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 5
+    require_Class: 1
+    potion: 0
+    price: 500
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 5
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Great Shield
+    item_Type: Shield
+    description: +Def 12
+    item_ID: 2010
+    item_Img: {fileID: 2800000, guid: 252d924bf9423f3409cd0476ef9df256, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 5
+    require_Class: 1
+    potion: 0
+    price: 1200
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 12
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Shoe
+    item_Type: Footgear
+    description: '+Def 3
+
+      +Move Speed 1'
+    item_ID: 2011
+    item_Img: {fileID: 2800000, guid: 70fabe9ac4f7b9e4cb5e13fb9104dc78, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 3
+    require_Class: 0
+    potion: 0
+    price: 600
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 3
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 1
+  - item_Name: <color=red>Red Shoe</color>
+    item_Type: Footgear
+    description: '+Def 10
+
+      +Move Speed 3'
+    item_ID: 2012
+    item_Img: {fileID: 2800000, guid: a45b930f459e1694ea317ad1d5b29e10, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 3
+    require_Class: 0
+    potion: 0
+    price: 0
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 10
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 3
+  - item_Name: Gold Ring
+    item_Type: Accessory
+    description: '+HP 50
+
+      +MP 20'
+    item_ID: 2013
+    item_Img: {fileID: 2800000, guid: 4440f66a8f2324542add4b58f7f3a5da, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 4
+    require_Class: 0
+    potion: 0
+    price: 800
+    hp: 50
+    mp: 20
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: <color=yellow>Fang Talisman</color>
+    item_Type: Accessory
+    description: '+Critical Rate 10
+
+      +Atk Speed 20'
+    item_ID: 2014
+    item_Img: {fileID: 2800000, guid: 3efcd240c6901594a86568b9da669b50, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 4
+    require_Class: 0
+    potion: 0
+    price: 2000
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 10
+    atkSpd: 20
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: <color=red>Emerald Ring</color>
+    item_Type: Accessory
+    description: '+HP 300
+
+      +MP 300
+
+      +All Status 10'
+    item_ID: 2015
+    item_Img: {fileID: 2800000, guid: d69df6b11bf4fd140a71ee1d4a2d7844, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 4
+    require_Class: 1
+    potion: 0
+    price: 0
+    hp: 300
+    mp: 300
+    atk: 10
+    def: 10
+    spd: 10
+    hit: 10
+    criPercent: 10
+    atkSpd: 10
+    atkRange: 0
+    moveSpd: 0
+  item_usable_set:
+  - item_Name: HP Potion S
+    item_Type: Potion
+    description: +HP 20
+    item_ID: 1001
+    item_Img: {fileID: 2800000, guid: 2d00fb4c915252c4480669f295f627ee, type: 3}
+    item_Effect: {fileID: 100010, guid: 32855de2cc5b28649b58f8e21d40d2f2, type: 2}
+    item_Sfx: {fileID: 8300000, guid: 764ba2cacb8a75d4e9ebb88786d5faf5, type: 3}
+    gold: 0
+    equipment_Type: 0
+    require_Class: 0
+    potion: 1
+    price: 30
+    hp: 20
+    mp: 0
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: HP Potion M
+    item_Type: Potion
+    description: +HP 50
+    item_ID: 1002
+    item_Img: {fileID: 2800000, guid: 8f0a25896e5d4624f87f67fb302e9c3f, type: 3}
+    item_Effect: {fileID: 100010, guid: 32855de2cc5b28649b58f8e21d40d2f2, type: 2}
+    item_Sfx: {fileID: 8300000, guid: 764ba2cacb8a75d4e9ebb88786d5faf5, type: 3}
+    gold: 0
+    equipment_Type: 0
+    require_Class: 0
+    potion: 1
+    price: 60
+    hp: 50
+    mp: 0
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: MP Potion S
+    item_Type: Item Type
+    description: +MP 20
+    item_ID: 1003
+    item_Img: {fileID: 2800000, guid: f5b0ee20fc3bae74592f71bec02966f4, type: 3}
+    item_Effect: {fileID: 100010, guid: b8935c0c5eb2164488a7361193f7c2f2, type: 2}
+    item_Sfx: {fileID: 8300000, guid: 764ba2cacb8a75d4e9ebb88786d5faf5, type: 3}
+    gold: 0
+    equipment_Type: 0
+    require_Class: 0
+    potion: 1
+    price: 50
+    hp: 0
+    mp: 20
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  item_etc_set:
+  - item_Name: Wolf Fang
+    item_Type: Etc
+    description: A wolf fang. can sell in shop.
+    item_ID: 3001
+    item_Img: {fileID: 2800000, guid: 35a1fa77442e2d54a89e2517aeebe6c2, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 0
+    require_Class: 0
+    potion: 0
+    price: 100
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  - item_Name: Wolf Fur
+    item_Type: Etc
+    description: A wolf fur. can sell in shop.
+    item_ID: 3002
+    item_Img: {fileID: 2800000, guid: 1819c37050bd5044691991cdeeb3b540, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 0
+    equipment_Type: 0
+    require_Class: 0
+    potion: 0
+    price: 50
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  item_gold:
+  - item_Name: Gold
+    item_Type: 
+    description: 
+    item_ID: 4001
+    item_Img: {fileID: 2800000, guid: 8e0b539799ea00c45b364fd3f72f4b16, type: 3}
+    item_Effect: {fileID: 0}
+    item_Sfx: {fileID: 0}
+    gold: 1
+    equipment_Type: 0
+    require_Class: 0
+    potion: 0
+    price: 0
+    hp: 0
+    mp: 0
+    atk: 0
+    def: 0
+    spd: 0
+    hit: 0
+    criPercent: 0
+    atkSpd: 0
+    atkRange: 0
+    moveSpd: 0
+  sizeEquip: 15
+  showEquipSize: 010101010101010101010101010101
+  sizeUsable: 3
+  showUsableSize: 000000
+  sizeEtc: 2
+  showEtcSize: 0101
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

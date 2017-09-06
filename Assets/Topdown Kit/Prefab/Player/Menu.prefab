@@ -1,0 +1,3593 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.49432564, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83340069db0de4747b860de1e6a11409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 0
+  inventory:
+  - nameWindow: Inventory
+    windowInventoryID: 0
+    windowDropItemID: 1
+    row: 8
+    colum: 8
+    windowInventoryRect:
+      serializedVersion: 2
+      x: 1206.2
+      y: 260
+      width: 300
+      height: 345
+    gridRect:
+      serializedVersion: 2
+      x: 17
+      y: 50.4
+      width: 33
+      height: 33
+    itemAmountRect:
+      serializedVersion: 2
+      x: 12.6
+      y: 50
+      width: 33.7
+      height: 30
+    windowDropRect:
+      serializedVersion: 2
+      x: 888.55
+      y: 492.94
+      width: 128.9
+      height: 41.12
+    windowDropAmount:
+      serializedVersion: 2
+      x: 10
+      y: 11.14
+      width: 60
+      height: 20
+    btnEnterDropAmount:
+      serializedVersion: 2
+      x: 74.6
+      y: 5
+      width: 45
+      height: 30.6
+    goldRect:
+      serializedVersion: 2
+      x: 151.3
+      y: 314
+      width: 130
+      height: 20
+    coinIconRect:
+      serializedVersion: 2
+      x: 153.2
+      y: 314.2
+      width: 21
+      height: 21
+    openInventory: 0
+    enterDrop: 0
+  equipment:
+  - nameEquipmentWindow: Equipment
+    windowEquipmentID: 2
+    windowEquipmentRect:
+      serializedVersion: 2
+      x: 884.19995
+      y: 341
+      width: 300
+      height: 345
+    windowDescriptionRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 100
+    slotEquipmentRect:
+    - equipType: 1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 60
+        width: 40
+        height: 40
+    - equipType: 2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 120
+        width: 40
+        height: 40
+    - equipType: 6
+      rect:
+        serializedVersion: 2
+        x: 52.1
+        y: 168.5
+        width: 40
+        height: 40
+    - equipType: 5
+      rect:
+        serializedVersion: 2
+        x: 209.6
+        y: 168.5
+        width: 40
+        height: 40
+    - equipType: 3
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 220
+        width: 40
+        height: 40
+    - equipType: 4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 280
+        width: 40
+        height: 40
+    openEquipment: 0
+  hotKeySlot:
+  - hotKeyslot:
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: -1
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    - item_id: 0
+      item_amount: 0
+      equipmentType: 0
+      linkIndex: 0
+      isItem: 0
+      typeSkill: 0
+    input_key: 3100000032000000330000003400000035000000360000003700000038000000
+    isItem: 0
+    hot_key_Rect:
+      serializedVersion: 2
+      x: 708
+      y: 945
+      width: 70
+      height: 70
+    space_Slot: 20
+    amountSlot: 8
+  skillWindow:
+  - nameSkillWindow: Skill
+    windowSkillID: 3
+    windowSkillRect:
+      serializedVersion: 2
+      x: 803
+      y: 238.05
+      width: 300
+      height: 345.5
+    scrollViewPosition:
+      serializedVersion: 2
+      x: 5
+      y: 55.5
+      width: 285
+      height: 275
+    scrollViewRect:
+      serializedVersion: 2
+      x: 0
+      y: 18.5
+      width: 0
+      height: 330
+    slotSkillRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 50
+      height: 50
+    descriptionRect:
+      serializedVersion: 2
+      x: 54
+      y: 0
+      width: 208
+      height: 50
+    skillNameRect:
+      serializedVersion: 2
+      x: 57.5
+      y: 4
+      width: 117
+      height: 20
+    skillTypeRect:
+      serializedVersion: 2
+      x: 178
+      y: 4
+      width: 80
+      height: 20
+    skillManaUseRect:
+      serializedVersion: 2
+      x: 218
+      y: 26.5
+      width: 40
+      height: 20
+    skillDescriptionRect:
+      serializedVersion: 2
+      x: 57.5
+      y: 26.5
+      width: 157.5
+      height: 20
+    openHittestDebug: 0
+    offset: {x: 5, y: 20}
+    positionTunerHittest: 13.5
+    space: 1.1
+    spaceSkillName: 2.75
+    spaceSkillType: 2.75
+    spaceSkillManaUse: 2.75
+    spaceDescription: 2.75
+    openSkillWindow: 0
+    lockSkillTexture: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+  itemShop:
+  - nameItemShopWindow: Item Shop
+    windowItemShopID: 4
+    windowItemShopRect:
+      serializedVersion: 2
+      x: 803
+      y: 238.3
+      width: 300
+      height: 345
+    scrollViewPosition:
+      serializedVersion: 2
+      x: 7.5
+      y: 57
+      width: 280
+      height: 252.25
+    scrollViewRect:
+      serializedVersion: 2
+      x: 0
+      y: 18.5
+      width: 0
+      height: 165
+    slotItemRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 50
+      height: 50
+    descriptionRect:
+      serializedVersion: 2
+      x: 52
+      y: 0
+      width: 205
+      height: 50
+    priceRect:
+      serializedVersion: 2
+      x: 117.22
+      y: 25
+      width: 45
+      height: 20
+    buttonBuyRect:
+      serializedVersion: 2
+      x: 177
+      y: 9
+      width: 68
+      height: 35
+    buttonCancelRect:
+      serializedVersion: 2
+      x: 265
+      y: 37.5
+      width: 20
+      height: 20
+    itemNameRect:
+      serializedVersion: 2
+      x: 60
+      y: 3
+      width: 105
+      height: 20
+    itemTypeRect:
+      serializedVersion: 2
+      x: 59.9
+      y: 23.5
+      width: 52.1
+      height: 20
+    itemDescriptionRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    moneyRect:
+      serializedVersion: 2
+      x: 180
+      y: 312.14
+      width: 90
+      height: 20
+    coinIconRect:
+      serializedVersion: 2
+      x: 160
+      y: 314.2
+      width: 20
+      height: 20
+    offset: {x: 5, y: 20}
+    space: 1.1
+    spacePrice: 2.75
+    spaceButtonBuy: 1.571
+    spaceItemName: 2.75
+    spaceItemType: 2.75
+    spaceItemDescription: 2.75
+    valueTuningIconFollowMouse: 12.5
+    openItemShop: 0
+    itemID: d1070000d2070000d3070000
+  statWindow:
+  - nameStatWindow: StatWindow
+    windowStatID: 5
+    windowStatRect:
+      serializedVersion: 2
+      x: 803
+      y: 238.3
+      width: 300
+      height: 345
+    AttackHeadRect:
+      serializedVersion: 2
+      x: 50
+      y: 59.9
+      width: 0
+      height: 20
+    DefHeadRect:
+      serializedVersion: 2
+      x: 50
+      y: 80
+      width: 0
+      height: 20
+    SpeedHeadRect:
+      serializedVersion: 2
+      x: 50
+      y: 100
+      width: 0
+      height: 20
+    HitHeadRect:
+      serializedVersion: 2
+      x: 50
+      y: 120
+      width: 0
+      height: 20
+    AttackValRect:
+      serializedVersion: 2
+      x: 145
+      y: 60
+      width: 0
+      height: 20
+    DefValRect:
+      serializedVersion: 2
+      x: 145
+      y: 80
+      width: 0
+      height: 20
+    SpeedValRect:
+      serializedVersion: 2
+      x: 145
+      y: 100
+      width: 0
+      height: 20
+    HitValRect:
+      serializedVersion: 2
+      x: 145
+      y: 120
+      width: 0
+      height: 20
+    PointStatRect:
+      serializedVersion: 2
+      x: 150
+      y: 145
+      width: 0
+      height: 20
+    HeadSummaryRect:
+      serializedVersion: 2
+      x: 144.6
+      y: 219.6
+      width: 0
+      height: 20
+    SummaryStatRectLeft:
+      serializedVersion: 2
+      x: 50
+      y: 269.2
+      width: 0
+      height: 20
+    SummaryStatRectRight:
+      serializedVersion: 2
+      x: 155
+      y: 269.5
+      width: 0
+      height: 20
+    BtnApplyRect:
+      serializedVersion: 2
+      x: 163
+      y: 175
+      width: 60
+      height: 30
+    BtnResetRect:
+      serializedVersion: 2
+      x: 84
+      y: 175
+      width: 60
+      height: 30
+    BtnAddStatAttack:
+      serializedVersion: 2
+      x: 245
+      y: 60
+      width: 20
+      height: 20
+    BtnAddStatDef:
+      serializedVersion: 2
+      x: 245
+      y: 80
+      width: 20
+      height: 20
+    BtnAddStatSpeed:
+      serializedVersion: 2
+      x: 245
+      y: 100
+      width: 20
+      height: 20
+    BtnAddStatHit:
+      serializedVersion: 2
+      x: 245
+      y: 120
+      width: 20
+      height: 20
+    openStatWindow: 0
+    valAtk: 24
+    valDef: 16
+    valSpeed: 16
+    valHit: 13
+    defAtk: 24
+    defDef: 16
+    defSpeed: 16
+    defHit: 13
+    defPoint: 0
+  keyOpenInventory:
+    keyOpenFirst: 105
+    keyOenSecound: 105
+  keyOpenEquipment:
+    keyOpenFirst: 101
+    keyOenSecound: 101
+  keyOpenSkill:
+    keyOpenFirst: 107
+    keyOenSecound: 107
+  keyOpenStat:
+    keyOpenFirst: 115
+    keyOenSecound: 115
+  useStyle: 1
+  guiStyleGroup:
+  - windowInventoryStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 098123245de9143179f46fc023e8ddb4, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    gridStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 3007be11974a746ac9e2a6ce785640bb, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 0
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 0
+      m_StretchHeight: 0
+    textAmountItemStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 8
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 0
+      m_StretchHeight: 0
+    windowDropStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 13c83acafeb2b6f4ba51dbb38919f6c2, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 0
+      m_StretchHeight: 0
+    goldStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 5
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 0
+      m_StretchHeight: 0
+    descriptionStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 4
+      m_WordWrap: 1
+      m_RichText: 1
+      m_TextClipping: 1
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 0
+      m_StretchHeight: 0
+    hotkeyStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 3007be11974a746ac9e2a6ce785640bb, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 0
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 0
+      m_StretchHeight: 0
+    btnEnterAmount:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 2043950bcbb23a24fae5c1260f2f259d, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 2800000, guid: e2d3abeb253f711438ae1f13856edd3c, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 2800000, guid: 2043950bcbb23a24fae5c1260f2f259d, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 2800000, guid: e2d3abeb253f711438ae1f13856edd3c, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    windowEquipmentStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: b9bb7459e390a4fa68ecbadeecedd80d, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 1
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    textLvUnlockStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 1
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    windowSkillStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c67685dc3a9a340ef9aab56dda1a927d, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    skillSlotStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: de8cc2bbedd45f644b4f5d478966f231, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    descriptionSkillSlotStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    skillNameStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 1
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    skillTypeStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 1
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    skillManaUseStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 1
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    skillDescriptionStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 1
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    windowItemShopStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 999819f33a83a45448e90f5cb2954fbb, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    itemShopCancel:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 5e9e775c167ee0d4586e046d00b62549, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 2800000, guid: ff5cf16090230db47bfa5c2dbf545481, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 2800000, guid: 14d9fa2d8ad9e4b4ea367c2e5f4d7ead, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 2800000, guid: ff5cf16090230db47bfa5c2dbf545481, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    itemShopSlotStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 3007be11974a746ac9e2a6ce785640bb, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    descriptionItemShopStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    itemShopPriceStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    itemShopButtonBuyStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 9764eb9c847d840c8bf484b633ee304e, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 2800000, guid: 71b851c08183d4e278659ccca8783a40, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 2800000, guid: 9764eb9c847d840c8bf484b633ee304e, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 2800000, guid: 71b851c08183d4e278659ccca8783a40, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    itemShopItemNameStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    itemShopItemTypeStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    itemShopDescriptionStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: c09bfb7760e0e400fbba746e6dbe2a2a, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 1
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 1
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    windowStatStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 4f0a2766b32008b43ba509dbe7968f37, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    textStatStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 3
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    textPointRemainStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    textHeadSummaryStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 4
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    textSummaryStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 1
+      m_Alignment: 3
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    btnApplyStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: db06b2cd736014772832b38cb8e9df67, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 2800000, guid: 211a4d26a5bee49888a9af894b70049f, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    btnResetStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 467fd40017aae4959a253af4b0efa3d4, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 2800000, guid: 2c3cc73f098b04c41b82241ea53f7145, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+    btnAddStatStyle:
+      m_Name: 
+      m_Normal:
+        m_Background: {fileID: 2800000, guid: 14d9fa2d8ad9e4b4ea367c2e5f4d7ead, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Hover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Active:
+        m_Background: {fileID: 2800000, guid: 776a485d1947b43cfa0518db5247e448, type: 3}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 0}
+      m_Focused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnNormal:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnHover:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnActive:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_OnFocused:
+        m_Background: {fileID: 0}
+        m_ScaledBackgrounds: []
+        m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_Border:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Margin:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Padding:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Overflow:
+        m_Left: 0
+        m_Right: 0
+        m_Top: 0
+        m_Bottom: 0
+      m_Font: {fileID: 0}
+      m_FontSize: 0
+      m_FontStyle: 0
+      m_Alignment: 0
+      m_WordWrap: 0
+      m_RichText: 1
+      m_TextClipping: 0
+      m_ImagePosition: 0
+      m_ContentOffset: {x: 0, y: 0}
+      m_FixedWidth: 0
+      m_FixedHeight: 0
+      m_StretchWidth: 1
+      m_StretchHeight: 0
+  null_Item_Texture: {fileID: 2800000, guid: d8e53f6276e3909408155ed5764d0ea8, type: 3}
+  coinIcon: {fileID: 2800000, guid: a1d1aab615b75487e8c415b662117a20, type: 3}
+  imgDebugCollision: {fileID: 2800000, guid: 5382dd72ee46c4562a7c706d8a09765e, type: 3}
+  rangeDetect: 3
+  item_Obj_Pref: {fileID: 100004, guid: f8ab77745397a49ac9cd6662824f89c0, type: 2}
+  bag_item:
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  - item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: -1
+    isItem: 0
+    typeSkill: 0
+  slotEquipment_item:
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  - item_id: 0
+    equipmentType: 0
+  hover: 
+  amountItemDrop: 
+  typeSkillHover: 0
+  itemImg_Pickup: {fileID: 0}
+  indexInventory: -1
+  indexEquipment: 0
+  indexHotKey: -1
+  id_Hover: 0
+  item_pickup:
+    item_id: 0
+    item_amount: 0
+    equipmentType: 0
+    linkIndex: 0
+    isItem: 0
+    typeSkill: 0
+  scrollPositionShop: {x: 0, y: 0}
+  scrollPosition: {x: 0, y: 0}
+  showAreaActive: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
