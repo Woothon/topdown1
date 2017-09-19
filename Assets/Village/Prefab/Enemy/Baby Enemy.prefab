@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1715163747211974}
+  m_IsPrefabParent: 1
+--- !u!1 &1715163747211974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4307482471287122}
+  - component: {fileID: 111368080272565680}
+  - component: {fileID: 114851654680445812}
+  - component: {fileID: 143117489292061462}
+  - component: {fileID: 114500331450399514}
+  m_Layer: 0
+  m_Name: Baby Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4307482471287122
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715163747211974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 113.574295, y: 11.041889, z: 132.26645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &111368080272565680
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715163747211974}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  m_Animations:
+  - {fileID: 7400000, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  - {fileID: 7400002, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  - {fileID: 7400004, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  - {fileID: 7400006, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  - {fileID: 7400008, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  - {fileID: 7400010, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  - {fileID: 7400012, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 1
+--- !u!114 &114500331450399514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715163747211974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf4b468e92194f47a72f95f07a66d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyName: Baby Wolf
+  enemyId: 1001
+  status:
+    hp: 120
+    mp: 1
+    atk: 16
+    def: 10
+    spd: 15
+    hit: 20
+    criticalRate: 3
+    atkSpd: 100
+    atkRange: 1
+    moveSpd: 2.5
+  expGive: 13
+--- !u!114 &114851654680445812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715163747211974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36778cac26162004297fdfb587630a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle:
+    Animation: {fileID: 7400000, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+    speedAnimation: 1
+  death:
+    Animation: {fileID: 7400012, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+    speedAnimation: 1
+  move:
+    Animation: {fileID: 7400002, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+    speedAnimation: 1
+    speedTuning: 1
+  normalAttackAnimation:
+  - attackName: Wolf Attack
+    animation: {fileID: 7400004, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+    speedAnimation: 1
+    attackTimer: 0.5
+    multipleDamage: 1
+    flinchValue: 20
+    speedTuning: 1
+    attackEffect: {fileID: 100002, guid: e339dd1e283f1f048a700349c92b4361, type: 2}
+    soundEffect: {fileID: 8300000, guid: 16b792defcf907e4c96e182e718cd1e0, type: 3}
+  criticalAttackAnimation:
+  - attackName: Wolf Critical
+    animation: {fileID: 7400006, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+    speedAnimation: 1
+    attackTimer: 0.5
+    multipleDamage: 2
+    flinchValue: 50
+    speedTuning: 1
+    attackEffect: {fileID: 100002, guid: e339dd1e283f1f048a700349c92b4361, type: 2}
+    soundEffect: {fileID: 8300000, guid: 16b792defcf907e4c96e182e718cd1e0, type: 3}
+  takeDamage:
+  - takeAttackName: Take Damage 1
+    animation: {fileID: 7400008, guid: cd5f6cebd34195e46b66e6da3ba24afb, type: 3}
+    speedAnimation: 1
+  - takeAttackName: Take Damage 2
+    animation: {fileID: 7400008, guid: 4aa12f02f16e28442a15edb8c580d46d, type: 3}
+    speedAnimation: 1
+--- !u!143 &143117489292061462
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715163747211974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0.88
+  m_Radius: 0.56
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.03
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0.51, z: 0}
