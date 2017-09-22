@@ -43,7 +43,7 @@ public class WooEnemyController : MonoBehaviour {
     private float defaultReturnPhase;
     private Vector3 spawnPoint;
     private float timeToWaitBeforeNextMove;
-    private float deplayAttack = 100;
+    private float delayAttack = 100;
     private Vector3 destinationPosition;
     private float destinationDistance;
     private Vector3 moveDir;
@@ -82,7 +82,7 @@ public class WooEnemyController : MonoBehaviour {
         enemyStatus = this.GetComponent<WolfStatus>();
         controller = this.GetComponent<CharacterController>();
 
-        deplayAttack = 100;
+        delayAttack = 100;
         flinchValue = 100;
         fadeValue = 1;
 
@@ -123,7 +123,7 @@ public class WooEnemyController : MonoBehaviour {
                     UpdateMovingToNextPatrolPoint();
                 }else if(moveBehavior == MoveAroundBehavior.Waiting)
                 {
-                    UpdateWaitingforNextMove();
+                    UpdateWaitingForNextMove();
                 }
             }
         }
@@ -159,12 +159,12 @@ public class WooEnemyController : MonoBehaviour {
             if (checkCritical)
             {
                 animationManager.animationState = animationManager.CriticalAttack;
-                deplayAttack = 100;
+                delayAttack = 100;
             }
             else
             {
                 animationManager.animationState = animationManager.Attack;
-                deplayAttack = 100;
+                delayAttack = 100;
             }
         }
 
@@ -247,5 +247,199 @@ public class WooEnemyController : MonoBehaviour {
 
         startFade = true;
         deadTransparent = false;
+    }
+
+    //wait for next move
+    void UpdateWaitingForNextMove()
+    {
+        timeToWaitBeforeNextMove -= Time.deltaTime;
+        if(timeToWaitBeforeNextMove < 0.0f)
+        {
+            RandomPostion();
+            moveBehavior = MoveAroundBehavior.MoveToNext;
+            ctrlAnimState = ControlAnimationState.Move;
+            moveSpeed = enemyStatus.status.moveSpd;
+        }
+    }
+
+    void LookAtTarget(Vector3 _targetPos)
+    {
+        targetPos.x = _targetPos.x;
+        targetPos.y = this.transform.position.y;
+        targetPos.z = _targetPos.z;
+        this.transform.LookAt(targetPos);
+    }
+
+    //Enemy movement when enemy found target
+    void EnemyMovementBattle()
+    {
+        if(chaseTarget == true)
+        {
+            LookAtTarget(target.transform.position);
+            destinationDistance = Vector3.Distance(target.transform.position, this.transform.position);//Check Distance Enemy to Hero
+
+            if(destinationDistance <= enemyStatus.status.atkRange)
+            {
+                if(ctrlAnimState == ControlAnimationState.Move || ctrlAnimState == ControlAnimationState.Idle)
+                {
+                    ctrlAnimState = ControlAnimationState.WaitAttack;
+                }
+
+                moveSpeed = 0;
+            }else if(destinationDistance > enemyStatus.status.atkRange){
+                if(ctrlAnimState == ControlAnimationState.Move || ctrlAnimState == ControlAnimationState.Idle || ctrlAnimState == ControlAnimationState.WaitAttack)
+                {
+                    ctrlAnimState = ControlAnimationState.Move;
+                }
+                moveSpeed = enemyStatus.status.moveSpd;
+            }
+        }else if(chaseTarget == false)
+        {
+            LookAtTarget(spawnPoint);
+            destinationDistance = Vector3.Distance(spawnPoint, this.transform.position);
+
+            if(destinationDistance <= enemyStatus.status.atkRange)
+            {
+                if (ctrlAnimState == ControlAnimationState.Move || ctrlAnimState == ControlAnimationState.Idle)
+                {
+                    ctrlAnimState = ControlAnimationState.Idle;
+                }
+
+                moveSpeed = 0;
+
+                returnPhase = defaultReturnPhase;
+
+                if(enableRegen)
+                {
+                    if (regenHP)
+                        enemyStatus.status.hp = Mathf.FloorToInt(defaultHP);
+                    if (regenMP)
+                        enemyStatus.status.mp = Mathf.FloorToInt(defaultMP);
+
+                    destinationPosition = this.transform.position;
+                    target = null; 
+                }
+
+            }
+            else
+            {
+                if(ctrlAnimState == ControlAnimationState.Move || ctrlAnimState == ControlAnimationState.Idle || ctrlAnimState == ControlAnimationState.WaitAttack)
+                {
+                    ctrlAnimState = ControlAnimationState.Move;
+                    
+                }
+
+                moveSpeed = enemyStatus.status.moveSpd;
+            }
+        }
+
+        //Check distance Spawn
+        float distanceSpawn = Vector3.Distance(spawnPoint, this.transform.position);
+        if(distanceSpawn > returnPhase)
+        {
+            if (regenHP || regenMP)
+                enableRegen = true;
+
+            chaseTarget = false;
+
+            returnPhase += 3;
+        }
+
+        // Move to distination;
+        if(ctrlAnimState == ControlAnimationState.Move)
+        {
+            if (controller.isGrounded)
+            {
+                moveDir = Vector3.zero;
+                moveDir = transform.TransformDirection(Vector3.forward * moveSpeed);
+            }
+        }
+        else
+        {
+            moveDir = Vector3.Lerp(moveDir, Vector3.zero, Time.deltaTime * 10);
+        }
+
+        moveDir.y -= 20 * Time.deltaTime;
+        controller.Move(moveDir * Time.deltaTime);
+    }
+
+    void WaitAttack()
+    {
+        PlayerStatus playerStatus;
+        playerStatus = target.GetComponent<PlayerStatus>();
+        if(playerStatus.statusCal.hp <= 0)
+        {
+            ResetState();
+        }
+
+        if(delayAttack > 0)
+        {
+            delayAttack -= Time.deltaTime * enemyStatus.status.atkSpd;
+        }else if(delayAttack <= 0)
+        {
+            checkCritical = CriticalCal(enemyStatus.status.criticalRate);
+
+            if (checkCritical)
+            {
+                typeAttack = Random.Range(0, animationManager.criticalAttack.Count);
+                animationManager.checkAttack = false;
+            }
+            else
+            {
+                typeAttack = Random.Range(0, animationManager.normalAttack.Count);
+                animationManager.checkAttack = false;
+            }
+
+            ctrlAnimState = ControlAnimationState.Attack;
+        }
+    }
+
+    bool CriticalCal(float criticalStat)
+    {
+        float calCritical = criticalStat - Random.Range(0, 101f);
+
+        if(calCritical > 0)
+        {
+            return true;
+        }
+
+         return false;
+
+    }
+
+    public void ResetState()
+    {
+        target = null;
+        chaseTarget = false;
+        destinationPosition = this.transform.position;
+        ctrlAnimState = ControlAnimationState.Idle;
+    }
+
+    public void DeadTransparentAlpha(float speedFade)
+    {
+        int index = 0;
+        Color[] colorDef = new Color[modelMesh.Count];
+
+        while(index < modelMesh.Count)
+        {
+            colorDef[index] = modelMesh[index].GetComponent<Renderer>().material.color;
+            Color alphaColor = new Color(modelMesh[index].GetComponent<Renderer>().material.color.r, modelMesh[index].GetComponent<Renderer>().material.color.g, modelMesh[index].GetComponent<Renderer>().material.color.b, fadeValue);
+            modelMesh[index].gameObject.GetComponent<Renderer>().material.color = alphaColor;
+
+            if(modelMesh[index].gameObject.GetComponent<Renderer>().material.color.a > 0)
+            {
+                if (fadeValue > 0)
+                {
+                    fadeValue -= Time.deltaTime * speedFade;
+                }
+                else
+                {
+                    fadeValue = 0;
+                }
+                    
+            }
+
+            index++;
+        }
     }
 }
