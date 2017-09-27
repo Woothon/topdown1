@@ -640,7 +640,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1200142708038658}
   m_LocalRotation: {x: 0, y: 0.095845714, z: 0, w: 0.9953962}
-  m_LocalPosition: {x: 113.574295, y: 12.86, z: 132.26645}
+  m_LocalPosition: {x: 113.574295, y: 11, z: 132.26645}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4815962050280760}
@@ -670,13 +670,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1152480822481442}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.9999619, z: 0, w: 0.008726652}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.09122005, y: 0.09122, z: 0.09122005}
   m_Children: []
   m_Father: {fileID: 4083394722352370}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 179, z: 0}
 --- !u!4 &4215100218403106
 Transform:
   m_ObjectHideFlags: 1
@@ -711,13 +711,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825816959743202}
-  m_LocalRotation: {x: -0.6719069, y: -0.22032064, z: -0.22032064, w: 0.6719069}
-  m_LocalPosition: {x: 0, y: -0.5, z: -0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4083394722352370}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -36.309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4292234973294350
 Transform:
   m_ObjectHideFlags: 1
@@ -947,13 +947,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1698508403938534}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.004363368, z: 0, w: 0.9999905}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 0.19999999, y: 0, z: 0.19999999}
   m_Children: []
   m_Father: {fileID: 4083394722352370}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.5, z: 0}
 --- !u!4 &4815962050280760
 Transform:
   m_ObjectHideFlags: 1
@@ -961,7 +961,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1746856531616878}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4405401260282798}
@@ -980,13 +980,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672888332440078}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.043619405, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 0.19999999, y: 0, z: 0.19999999}
   m_Children: []
   m_Father: {fileID: 4083394722352370}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -5, z: 0}
 --- !u!4 &4854067490480760
 Transform:
   m_ObjectHideFlags: 1
@@ -1279,23 +1279,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e09bc8f486c044e800d1665257e906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviour: 0
+  behaviour: 1
   nature: 0
   moveBehavior: 0
   target: {fileID: 0}
   chaseTarget: 0
   modelMesh: []
   colorTakeDamage: {r: 0, g: 0, b: 0, a: 0}
-  deadTimer: 0
+  deadTimer: 1.5
   deadTransparent: 0
-  speedFade: 0
+  speedFade: 1
   regenHP: 0
   regenMP: 0
   ctrlAnimState: 0
-  movePhase: 0
-  returnPhase: 0
-  delayNextTargetMin: 0
-  delayNextTargetMax: 0
+  movePhase: 3
+  returnPhase: 6
+  delayNextTargetMin: 2
+  delayNextTargetMax: 4
   defaultHP: 0
   defaultMP: 0
   typeAttack: 0
@@ -1368,7 +1368,7 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 4815962050280760}
   m_AABB:
-    m_Center: {x: -0.197, y: 0.026, z: 1.2}
+    m_Center: {x: -0.197, y: -0.026, z: 1.2}
     m_Extent: {x: 0.334, y: 0.534, z: 0.564}
   m_DirtyAABB: 0
 --- !u!143 &143434544611401464

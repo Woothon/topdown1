@@ -126,11 +126,12 @@ public class WooEnemyController : MonoBehaviour {
                     UpdateWaitingForNextMove();
                 }
             }
+            else
+            {
+                EnemyMovementBattle();
+            }
         }
-        else
-        {
-            EnemyMovementBattle();
-        }
+        
     }
 
     //State Enemy
